@@ -8,3 +8,5 @@ PRODUCT_SOONG_NAMESPACES += \
 # Inherit fragments
 $(call inherit-product, vendor/xiaomi/pine/pine-vendor-acdb.mk)
 $(call inherit-product, vendor/xiaomi/pine/pine-vendor-firmware.mk)
+
+$(call inherit-product-if-exists, vendor/xiaomi/pine-camera/pine-camera-vendor.mk)
